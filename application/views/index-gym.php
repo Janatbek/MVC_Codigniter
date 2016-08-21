@@ -48,7 +48,7 @@
 		<!-- The Project core CSS file -->
 		<link href="../../assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="../../assets/css/skins/vivid_red.css" rel="stylesheet">
+		<link href="../../assets/css/skins/light_blue.css" rel="stylesheet">
 		
 
 		<!-- Custom css --> 
@@ -138,7 +138,7 @@
 				<!-- "full-width": mandatory class for the full-width menu layout -->
 				<!-- "centered": mandatory class for the centered logo layout -->
 				<!-- ================ --> 
-				<header class="header  fixed fixed-before  dark clearfix">
+				<header class="header  fixed  full-width  clearfix transparent-header-on">
 					
 					<div class="container-fluid">
 						<div class="row">
@@ -217,28 +217,28 @@
 														<a href="/">HOME</a>
 													</li>
 													<li>
-														<a href="page-services-3.php">SERVICES</a></li>
+														<a href="/welcome/service">SERVICES</a></li>
 													</li>
 													<!-- mega-menu end -->
 													<li>
-														<a href="page-about.php">CONDITIONS WE TREAT</a></li>
+														<a href="/welcome/treatment">CONDITIONS WE TREAT</a></li>
 													</li>
 													<!-- mega-menu start -->
 													<li>
-														<a href="page-about-4.php">INSURANCE COVERAGE</a>
+														<a href="/welcome/insurance">INSURANCE COVERAGE</a>
 													</li>
 													<!-- mega-menu end -->
 													<li class="dropdown ">
-														<li ><a href="page-team.php">OUR TEAM</a>
+														<li ><a href="/welcome/team">OUR TEAM</a>
 													</li>
 													<li>
-														<a href="page-about-me.php">WHY CHOOSE US</a>
+														<a href="/welcome/choose">WHY CHOOSE US</a>
 													</li>
 													<li>
-														<a href="page-faq.php">FAQ</a>
+														<a href="/welcome/faq">FAQ</a>
 													</li>
 													<li>
-														<a href="page-contact-2.php">MAKE AN APPOINTMENT</a>
+														<a href="/welcome/appointment">MAKE AN APPOINTMENT</a>
 													</li>
 												</ul>
 												<!-- main-menu end -->
@@ -248,8 +248,7 @@
 													<a href="mailto:theproject@info.com" class="btn btn-sm hidden-xs btn-default">Contact Us <i class="fa fa-envelope-o pl-5"></i></a>
 													<a href="mailto:theproject@info.com" class="btn btn-lg visible-xs btn-block btn-default">Contact Us <i class="fa fa-envelope-o pl-5"></i></a>
 												</div>
-												<!-- header buttons end-->
-												
+												<!-- header buttons end-->	
 											</div>
 
 										</div>
@@ -264,7 +263,6 @@
 							</div>
 						</div>
 					</div>
-					
 				</header>
 				<!-- header end -->
 			</div>
@@ -779,7 +777,6 @@
 
 			</footer>
 			<!-- footer end -->
-			
 		</div>
 		<!-- page-wrapper end -->
 

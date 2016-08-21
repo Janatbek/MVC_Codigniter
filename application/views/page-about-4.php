@@ -23,28 +23,28 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
 		<!-- Bootstrap core CSS -->
-		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="../../assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 		<!-- Font Awesome CSS -->
-		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="../../assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 		<!-- Fontello CSS -->
-		<link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+		<link href="../../assets/fonts/fontello/css/fontello.css" rel="stylesheet">
 
 		<!-- Plugins -->
-		<link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		<link href="css/animations.css" rel="stylesheet">
-		<link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-		<link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-		<link href="plugins/hover/hover-min.css" rel="stylesheet">		
+		<link href="../../assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="../../assets/css/animations.css" rel="stylesheet">
+		<link href="../../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="../../assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+		<link href="../../assets/plugins/hover/hover-min.css" rel="stylesheet">		
 		
 		<!-- The Project core CSS file -->
-		<link href="css/style.css" rel="stylesheet" >
+		<link href="../../assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="css/skins/light_blue.css" rel="stylesheet">
+		<link href="../../assets/css/skins/light_blue.css" rel="stylesheet">
 
 		<!-- Custom css --> 
-		<link href="css/custom.css" rel="stylesheet">
+		<link href="../../assets/css/custom.css" rel="stylesheet">
 	</head>
 
 	<!-- body classes:  -->
