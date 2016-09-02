@@ -6,6 +6,7 @@ class Friends extends CI_Controller {
 	public function  __construct(){
 		parent::__construct();
 		$this->load->model('friend');
+		// $this->load->model('user');
 		$this->viewdata = array();
 		$this->viewdata['name'] = $this->session->userdata('name');
 		$this->viewdata['id'] = $this->session->userdata('id');
@@ -34,8 +35,10 @@ class Friends extends CI_Controller {
 		redirect('/friends');
 	}
 	public function view_other_users_profile($id){
+		$data = array();
 		$data['other_users_profile'] = $this->friend->view_other_users_profile(array('user_id' => $this->session->userdata('id'), 'users.id' => $id));
 		$this->load->view('other_profile_view', $data);
+
 	}
 
 

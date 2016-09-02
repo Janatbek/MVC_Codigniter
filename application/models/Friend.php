@@ -18,7 +18,7 @@ class Friend extends CI_model {
 		SELECT friend_id FROM friendships WHERE user_id = '$id'
 		UNION 
 		SELECT user_id FROM friendships WHERE friend_id = '$id'
-		)";
+		) and users.id <> $id";
 		return $this->db->query($query)->result_array();
 	}
 	public function view_friends_profile($data){
@@ -36,17 +36,16 @@ class Friend extends CI_model {
 		$this->db->delete('friends_app.friendships', $data);
 	}
 	public function view_other_users_profile($data){
-		$user_id = $data['user_id'];
-		$users.id = $data['users.id'];
+		$user_id = (int)$data['user_id'];
 			$query = "SELECT id,name, alias, email
 			FROM users
 			WHERE users.id NOT IN
 			(
-			SELECT friend_id FROM friendships WHERE user_id = '$user_id'
+			SELECT friend_id FROM friendships WHERE user_id = '".$data['user_id']."'
 			UNION 
-			SELECT user_id FROM friendships WHERE friend_id = '$user_id'
-			) AND users.id = 5";
+			SELECT user_id FROM friendships WHERE friend_id = '".$data['user_id']."'
+			) AND users.id = '".$data['users.id']."'";
 
-			return $this->db->query($query, $data)->result_array();
+			return $this->db->query($query, array('user_id' => $data['user_id'], 'users.id' => $data['users.id']))->result_array();
 	}
 }

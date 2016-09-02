@@ -13,7 +13,7 @@ class Users extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('name', 'Name', 'required|trim');
 		$this->form_validation->set_rules('alias', 'Alias', 'required|trim');
-		$this->form_validation->set_rules('email', 'Email', 'required|trim');
+		$this->form_validation->set_rules('email', 'Email', 'required|trim|is_unique[users.email]');
 		$this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[8]');
 		$this->form_validation->set_rules('confirm_password', 'Password Confirmation', 'required|trim|matches[password]');
 		$this->form_validation->set_rules('dob', 'Date of birth','required|trim');
@@ -39,7 +39,7 @@ class Users extends CI_Controller {
 	public function login(){
 		$this->load->model('user');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('email', 'Email', 'required|trim');
+		$this->form_validation->set_rules('email', 'Email', 'required|trim|');
 		$this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[8]');
 		if ($this->form_validation->run() == FALSE){
 			$this->load->view('loginAndReg');
