@@ -5,9 +5,7 @@ class Friends extends CI_Controller {
 
 	public function  __construct(){
 		parent::__construct();
-		$this->output->enable_profiler();
 		$this->load->model('friend');
-		// $this->load->model('quote');
 		$this->viewdata = array();
 		$this->viewdata['name'] = $this->session->userdata('name');
 		$this->viewdata['id'] = $this->session->userdata('id');

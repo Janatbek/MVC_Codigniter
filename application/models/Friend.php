@@ -37,6 +37,7 @@ class Friend extends CI_model {
 	}
 	public function view_other_users_profile($data){
 		$user_id = $data['user_id'];
+		$users.id = $data['users.id'];
 			$query = "SELECT id,name, alias, email
 			FROM users
 			WHERE users.id NOT IN
@@ -44,7 +45,7 @@ class Friend extends CI_model {
 			SELECT friend_id FROM friendships WHERE user_id = '$user_id'
 			UNION 
 			SELECT user_id FROM friendships WHERE friend_id = '$user_id'
-			) AND users.id =5";
+			) AND users.id = 5";
 
 			return $this->db->query($query, $data)->result_array();
 	}
