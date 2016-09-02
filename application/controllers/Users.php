@@ -39,7 +39,7 @@ class Users extends CI_Controller {
 	public function login(){
 		$this->load->model('user');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('email', 'Email', 'required|trim|');
+		$this->form_validation->set_rules('email', 'Email', 'required|trim');
 		$this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[8]');
 		if ($this->form_validation->run() == FALSE){
 			$this->load->view('loginAndReg');
