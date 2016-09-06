@@ -35,7 +35,7 @@ class Friends extends CI_Controller {
 		redirect('/friends');
 	}
 	public function view_other_users_profile($id){
-		$data = array();
+		$other = array();
 		$data['other_users_profile'] = $this->friend->view_other_users_profile(array('user_id' => $this->session->userdata('id'), 'users.id' => $id));
 		$this->load->view('other_profile_view', $data);
 
